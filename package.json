@@ -1,0 +1,65 @@
+{
+	"name": "package-minifier",
+	"version": "1.0.0",
+	"description": "Minify JS, CSS, and HTML while preserving folder structure",
+	"directories": {
+		"lib": "lib"
+	},
+	"bin": {
+		"package-minifier": "dist/bin/index.js"
+	},
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "npm run build"
+	},
+	"main": "dist/lib/index.js",
+	"types": "dist/lib/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/imsyedabdullah/package-minifier.git"
+	},
+	"keywords": [
+		"minify",
+		"uglify",
+		"uglifyjs",
+		"html-minifier",
+		"clean-css",
+		"folder minifier",
+		"recursive minify",
+		"directory minifier",
+		"js minifier",
+		"css minifier",
+		"html minifier",
+		"minify folders",
+		"preserve folder structure",
+		"cli tool",
+		"cli utility",
+		"build tool",
+		"optimization",
+		"compressor",
+		"frontend optimization",
+		"static site optimization",
+		"asset minification",
+		"web performance",
+		"web build"
+	],
+	"author": "Syed Abdullah",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/imsyedabdullah/package-minifier/issues"
+	},
+	"homepage": "https://github.com/imsyedabdullah/package-minifier#readme",
+	"dependencies": {
+		"clean-css": "^5.3.3",
+		"fs-extra": "^11.3.0",
+		"html-minifier": "^4.0.0",
+		"uglify-js": "^3.19.3"
+	},
+	"devDependencies": {
+		"@types/clean-css": "^4.2.11",
+		"@types/fs-extra": "^11.0.4",
+		"@types/html-minifier": "^4.0.5",
+		"@types/node": "^22.13.10",
+		"typescript": "^5.8.2"
+	}
+}
