@@ -6,7 +6,7 @@
 		"lib": "lib"
 	},
 	"bin": {
-		"package-minifier": "dist/bin/index.js"
+		"pkgmin": "dist/bin/index.js"
 	},
 	"scripts": {
 		"build": "tsc",

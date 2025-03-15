@@ -1,4 +1,4 @@
-# 📂 Package Uglifier
+# 📂 Package Minifier
 
 **Recursively Minify/Uglify JS, CSS, and HTML Files in a Directory While Preserving Folder Structure!**
 
@@ -32,7 +32,7 @@ npm install package-minifier --save-dev
 After installation, you can run it from any directory:
 
 ```bash
-package-minifier
+pkgmin
 ```
 
 By default, it will:
