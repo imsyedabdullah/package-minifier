@@ -51,7 +51,6 @@ const runMinifier = (userConfigPath, baseDir) => {
             ...userConfig.js
         }
     };
-    console.log(config);
     const { excludeFiles = [], excludeFolders = [], outputDir, html, css, js } = config;
     const inputDir = baseDir;
     const resolvedOutputDir = path_1.default.resolve(baseDir, outputDir);

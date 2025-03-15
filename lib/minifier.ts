@@ -48,9 +48,6 @@ export const runMinifier = (userConfigPath: string | null, baseDir: string): voi
 		}
 	};
 
-	
-	console.log(config);
-
 	const {
 		excludeFiles = [],
 		excludeFolders = [],
