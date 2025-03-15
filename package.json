@@ -2,12 +2,14 @@
 	"name": "package-minifier",
 	"version": "1.0.0",
 	"description": "Minify JS, CSS, and HTML while preserving folder structure",
-	"directories": {
-		"lib": "lib"
-	},
+	"author": "Syed Abdullah",
+	"license": "MIT",
 	"bin": {
 		"pkgmin": "dist/bin/index.js"
 	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "tsc",
 		"prepublishOnly": "npm run build"
@@ -47,8 +49,6 @@
 		"web performance",
 		"web build"
 	],
-	"author": "Syed Abdullah",
-	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/imsyedabdullah/package-minifier/issues"
 	},
