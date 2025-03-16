@@ -1,6 +1,6 @@
 {
 	"name": "package-minifier",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Minify JS, CSS, and HTML while preserving folder structure",
 	"author": "Syed Abdullah",
 	"license": "MIT",
