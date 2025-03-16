@@ -6,11 +6,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.processHTMLFile = void 0;
 const fs_extra_1 = __importDefault(require("fs-extra"));
 const path_1 = __importDefault(require("path"));
-const html_minifier_1 = require("html-minifier");
+const html_minifier_terser_1 = require("html-minifier-terser");
 /**
  * Minify or copy HTML files.
  */
-const processHTMLFile = (inputPath, outputPath, htmlConfig) => {
+const processHTMLFile = async (inputPath, outputPath, htmlConfig) => {
     const code = fs_extra_1.default.readFileSync(inputPath, 'utf8');
     if (!(htmlConfig === null || htmlConfig === void 0 ? void 0 : htmlConfig.enabled)) {
         fs_extra_1.default.ensureDirSync(path_1.default.dirname(outputPath));
@@ -19,7 +19,7 @@ const processHTMLFile = (inputPath, outputPath, htmlConfig) => {
         return;
     }
     try {
-        const result = (0, html_minifier_1.minify)(code, htmlConfig.options || {});
+        const result = await (0, html_minifier_terser_1.minify)(code, htmlConfig.options || {});
         fs_extra_1.default.ensureDirSync(path_1.default.dirname(outputPath));
         fs_extra_1.default.writeFileSync(outputPath, result, 'utf8');
         console.log(`✅ Minified HTML: ${outputPath}`);

@@ -25,6 +25,7 @@
 		"uglify",
 		"uglifyjs",
 		"html-minifier",
+		"html-minifier-terser",
 		"clean-css",
 		"folder minifier",
 		"package minifier",
@@ -56,14 +57,15 @@
 	"dependencies": {
 		"clean-css": "^5.3.3",
 		"fs-extra": "^11.3.0",
-		"html-minifier": "^4.0.0",
+		"html-minifier-terser": "^7.2.0",
 		"uglify-js": "^3.19.3"
 	},
 	"devDependencies": {
 		"@types/clean-css": "^4.2.11",
 		"@types/fs-extra": "^11.0.4",
-		"@types/html-minifier": "^4.0.5",
+		"@types/html-minifier-terser": "^7.0.2",
 		"@types/node": "^22.13.10",
+		"@types/uglify-js": "^3.17.5",
 		"typescript": "^5.8.2"
 	}
 }

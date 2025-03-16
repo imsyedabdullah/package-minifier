@@ -1,6 +1,6 @@
 import type { MinifyOptions as JsOptions } from 'uglify-js';
 import type { Options as CssOptions } from 'clean-css';
-import type { Options as HtmlOptions } from 'html-minifier';
+import type { Options as HtmlOptions } from 'html-minifier-terser';
 export interface Config {
     excludeFiles: string[];
     excludeFolders: string[];

@@ -1,12 +1,12 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { minify as minifyHTML } from 'html-minifier';
+import { minify as minifyHTML } from 'html-minifier-terser';
 import type { Config } from './index';
 
 /**
  * Minify or copy HTML files.
  */
-export const processHTMLFile = (
+export const processHTMLFile = async (
 	inputPath: string,
 	outputPath: string,
 	htmlConfig: Config['html']
@@ -21,7 +21,7 @@ export const processHTMLFile = (
 	}
 
 	try {
-		const result = minifyHTML(code, htmlConfig.options || {});
+		const result = await minifyHTML(code, htmlConfig.options || {});
 		fs.ensureDirSync(path.dirname(outputPath));
 		fs.writeFileSync(outputPath, result, 'utf8');
 		console.log(`✅ Minified HTML: ${outputPath}`);

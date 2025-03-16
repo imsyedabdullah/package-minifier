@@ -6,7 +6,7 @@
 
 ✅ Minify/Uglify JavaScript files (with `uglify-js`)  
 ✅ Minify CSS files (with `clean-css`)  
-✅ Minify HTML files (with `html-minifier`)  
+✅ Minify HTML files (with `html-minifier-terser`)  
 ✅ Preserve original folder structure  
 ✅ Highly configurable via `package-minifier.config.js` or `package-minifier.config.ts`  
 ✅ Exclude specific files or folders  
@@ -15,21 +15,14 @@
 
 ## 📦 Installation
 
-### Globally (Recommended)
 
 ```bash
-npm install -g package-minifier
-```
-
-### Locally (Optional)
-
-```bash
-npm install package-minifier --save-dev
+npm install --save-dev package-minifier
 ```
 
 ## 🚀 Usage
 
-After installation, you can run it from any directory:
+After installation, you can run it from any directory under your project:
 
 ```bash
 pkgmin
@@ -38,7 +31,7 @@ pkgmin
 By default, it will:
 
 1. Use the **current working directory** as the input folder.
-2. Look for a config file named `package-minifier.config.js` (or use the default configuration).
+2. Look for a config file named `package-minifier.config.js` in the current working directory (or use the default configuration).
 
 ## 🔧 Configuration
 
@@ -106,7 +99,7 @@ export default defineConfig({
 | `css.enabled`    | `boolean`  | Enable/disable CSS minification                                                         |
 | `css.options`    | `object`   | Options passed to `clean-css` (see [docs](https://github.com/jakubpawlowicz/clean-css)) |
 | `html.enabled`   | `boolean`  | Enable/disable HTML minification                                                        |
-| `html.options`   | `object`   | Options passed to `html-minifier` (see [docs](https://github.com/kangax/html-minifier)) |
+| `html.options`   | `object`   | Options passed to `html-minifier-terser` (see [docs](https://github.com/terser/html-minifier-terser)) |
 
 
 ## ✅ Example Folder Structure
