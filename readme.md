@@ -25,7 +25,7 @@ npm install --save-dev package-minifier
 After installation, you can run it from any directory under your project:
 
 ```bash
-pkgmin
+npx pkgmin
 ```
 
 By default, it will:
